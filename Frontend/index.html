@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div id="app">
         <!-- Navigation Bar -->
@@ -24,7 +26,7 @@
 
         <!-- Main Content Area -->
         <main id="main-content">
-            
+
             <!-- Login View -->
             <section id="view-login" class="view active">
                 <div class="glass-card auth-card">
@@ -51,7 +53,7 @@
                 <div class="glass-card auth-card">
                     <h2>Create Account</h2>
                     <p class="subtitle">Join the citizen registration platform</p>
-                    
+
                     <!-- Step 1: Info -->
                     <form id="form-register-info">
                         <div id="register-error" class="error-message"></div>
@@ -84,7 +86,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Verify & Register</button>
                     </form>
-                    
+
                     <p class="auth-switch">Already have an account? <a href="#" id="go-to-login">Log in</a></p>
                 </div>
             </section>
@@ -107,14 +109,16 @@
                 <div class="glass-card submit-card">
                     <h2>Submit a Complaint</h2>
                     <button id="btn-back-to-complaints" class="btn btn-outline btn-sm mb-4">← Back</button>
-                    
+
                     <form id="form-submit-complaint">
                         <div id="submit-error" class="error-message"></div>
                         <div class="form-group">
                             <label for="complaint-text">Describe your issue in detail</label>
-                            <textarea id="complaint-text" required rows="5" placeholder="Please provide as much context as possible..."></textarea>
+                            <textarea id="complaint-text" required rows="5"
+                                placeholder="Please provide as much context as possible..."></textarea>
                         </div>
-                        <button type="button" id="btn-get-ai-question" class="btn btn-secondary w-100">Analyze with AI</button>
+                        <button type="button" id="btn-get-ai-question" class="btn btn-secondary w-100">Analyze with
+                            AI</button>
 
                         <div id="ai-section" class="hidden mt-4">
                             <div class="ai-question-box">
@@ -123,7 +127,8 @@
                             </div>
                             <div class="form-group mt-3">
                                 <label for="user-answer">Your Answer</label>
-                                <textarea id="user-answer" required rows="3" placeholder="Provide your answer here..."></textarea>
+                                <textarea id="user-answer" required rows="3"
+                                    placeholder="Provide your answer here..."></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary w-100 mt-2">Submit Full Complaint</button>
                         </div>
@@ -153,4 +158,5 @@
     <script src="js/api.js"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>
